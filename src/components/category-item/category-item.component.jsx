@@ -2,8 +2,8 @@ import './category-item.styles.scss'
 
 import React from 'react'
 
-const CategoryItem = ({ category }) => {
-      const { title, imageUrl } = category
+const CategoryItem = (props) => {
+      const { title, imageUrl } = props
 return (
       <div className="category-container">
             <div className="background-image" style={{ backgroundImage: `url(${imageUrl})` }} />
